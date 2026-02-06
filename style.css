@@ -1,0 +1,1194 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+
+.Header{
+    width: 100%;
+    height: 85px;
+    background-color: rgb(13, 13, 65);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom: 1px solid aqua;
+    z-index: 2;
+}
+
+.fakeheader{
+     width: 100%;
+    height: 85px;
+    display: flex;
+    background-color: rgb(13, 13, 65);
+    margin-top: 0px;
+
+}
+
+.logo{
+    font-size: 30px;
+    color: white;
+    margin-left: 20px;
+    font-weight: 800;
+    
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+.List a{
+
+text-decoration: none;
+list-style: none;
+color: aqua;
+font-size: 18px;
+cursor: pointer;
+
+}
+.List a:hover {
+     text-decoration: underline;
+     list-style: none;
+}
+
+
+.SignInbtn{
+    margin-right: 40px;
+}
+.SignInbtn button{
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(13, 13, 65);
+    background-color: aqua;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+
+}
+.SignInbtn button:hover{
+     background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 5px aqua);
+    border: 0.5px solid aqua;
+    color: white;
+}
+
+#container{
+
+    height: 550px;
+    width: 100%;
+    background-color: rgb(13, 13, 65);
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+}
+
+
+.left{
+    background-color:rgb(13, 13, 65);
+    height: 600px;
+    
+
+}
+
+.image{
+    background-color: rgb(13, 13, 65);
+    height: 500px;
+    width: 500px;
+}
+.profilepic{
+    height: 410px;
+    width: 410px;
+    border: 1px solid aqua;
+    border-radius: 70%;
+    margin-left: 35px;
+    margin-top: 0px;
+    filter: drop-shadow(3px 5px 10px aqua );
+    transition: 0.3s ease;
+    
+}
+.profilepic:hover{
+
+       transform: scale(1.01);
+    filter: drop-shadow(3px 3px 20px aqua);
+
+}
+.right{
+    background-color:rgb(13, 13, 65);
+    flex: 1;
+    height: 600px;
+    margin-top :-5px;
+}
+
+.content{
+    height: 150px;
+    width: 100%;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.introh1{
+    color: white;
+
+
+}
+.introh5{
+    margin-left: 30px;
+}
+
+.spanh3 h3{
+    margin-left: 20px;
+    color: aqua;
+}
+h3{
+    color:white;
+}
+
+.contact-icon{
+    height:35px;
+    width: 200px;
+    margin-left: 150px;
+    gap: 20px;
+    display: flex;
+}
+.contact-icon a i{
+           font-size: 30px;
+           color:aqua;
+           border: none;
+           height: 25px;
+           width: 28px;
+           outline: none;
+           border-radius:50%;
+           background-color: rgb(13, 13, 65);
+    
+}
+.contact-icon a i:hover{
+      background-color:aqua;
+    filter: drop-shadow(1px 3px 5px aqua);
+    border: 0.5px solid rgb(13, 13, 65);
+    color:rgb(13, 13, 65);
+}
+
+.Btncontent{
+    margin-left: 100px;
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+}
+
+.Btncontent a button{
+    height: 45px;
+    width: 100px;
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 2px;
+    border-radius: 10px;
+    outline: none;
+    background-color: aqua;
+    color: rgb(13, 13, 65);
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+.Btncontent a button:hover{
+      background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 5px aqua);
+    border: 0.5px solid aqua;
+    color: white;
+}
+
+
+.formcontent{
+    height: 400px;
+    width: 400px;
+    background: rgba(4, 46, 77, 0.25);
+     backdrop-filter: blur(52px);
+    border-radius: 12px;
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 40%;
+    display:none;
+    flex-direction: column;
+    align-items: center;
+  box-shadow: 0 10px 30px rgba(7, 189, 225, 0.3);
+  z-index: 9999;
+  
+}
+
+.Formclosebtn{
+   margin-left:370px;
+    background-color:rgb(13, 13, 65);
+    color: aqua;
+    filter: drop-shadow(1px 3px 8px aqua); 
+   height: 25px;
+   width: 25px;
+   font-size: 20px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: 0.1s;
+}
+.close:hover{
+   color:rgb(13, 13, 65);
+   background-color: aqua;
+    filter: drop-shadow(1px 3px 8px aqua);  
+}
+
+
+.formcontent h1{
+    margin-top: 20px;
+    color: aqua;
+
+
+
+}
+.label{
+
+    color: rgb(224, 230, 230);
+    font-size: 20px;
+   
+
+}
+.inputfield{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: rgb(13, 13, 65);
+    border-radius: 5px;
+    color: white;
+
+
+}
+.forgetp{
+    color: aqua;
+    font-size: 15px;
+    margin-top: 10px;
+
+}
+.forgetp a{
+    margin-left: 10px;
+    color: white;
+
+}
+.Logi-btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.Logi-btn button{
+
+    height: 35px;
+    width: 80px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: rgb(13, 13, 65);
+    background-color: aqua;
+    cursor: pointer;
+
+}
+
+.container2{
+
+    display: flex;
+    background-color: rgb(13, 13, 65);
+    height: 550px;
+    width: 100%;
+    position: relative;
+    
+}
+.container2 h1{
+    color: white;
+    position: absolute;
+    top:0%;
+    left: 45%;
+
+
+}
+.aboutpic{
+    width:40%;
+    justify-content: left;
+    margin-top: 20px;
+
+}
+.aboutpic img {
+    height: 500px;
+    width: 400px;
+}
+.aboutmecontent{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+    height: 500px;
+    width: 60%;
+}
+
+
+.experiance{
+    height: 200px;
+    width: 250px;
+    background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 8px aqua);  
+    border: 0.5px solid aqua;
+    margin-top: 100px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    color: white;
+}
+
+
+.experiance span{
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+.experiance span h4{
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+.experiance p{
+    margin-top: 20px;
+}
+.education{
+    height: 200px;
+    width: 250px;
+    background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 8px aqua);
+     border: 0.5px solid aqua;
+     margin-top: 100px;
+     display: flex;
+     border-radius: 15px;
+     color: white;
+     flex-direction: column;
+     align-items: center;
+}
+
+.education span{
+    margin-top: 10px;
+    margin-left: 20px;
+    
+}
+.education span h4{
+    margin-top: 10px;
+    margin-left: -20px;
+}
+
+.education p{
+    margin-top: 20px;
+}
+.aboutpara{
+    width: 80%;
+    grid-column: 1 / 3;
+    color: white;
+    margin-left: 60px;
+    
+}
+.aboutpara h4{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.aboutpara p{
+    margin-top: 5px;
+    margin-left: 10px;
+    word-spacing: 2px;
+}
+
+.container3{
+    height: 950px;
+    background-color: rgb(13, 13, 65);
+    width: 100%;
+    position: relative;
+ 
+}
+.container3 h1{
+    position: absolute;
+    left: 45%;
+    color: white;
+    text-decoration: underline;
+
+}
+.skillconatiner{
+    height: 880px;
+    background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 18px aqua);
+     border: 0.5px solid aqua;
+     border-radius: 10px;
+    width: 70%;
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    right: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-evenly;
+}
+
+.skills{
+    height: 250px;
+    width: 300px;
+    margin-top: 20px;
+     background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 5px aqua);
+     border: 0.5px solid aqua;
+     border-radius: 10px;
+     color: white;
+     position: relative;
+     cursor: pointer;
+}
+
+.skills:hover{
+    background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 10px aqua);
+    border: 1px solid rgb(13, 13, 65);
+    color: white;
+
+}
+.skills h5{
+    position: absolute;
+    top: 5px;
+    left: 43%;
+}
+.skills img{
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 45px;
+
+}
+  .exp img{
+    width: 230px;
+    height: 200px;
+
+    
+}
+.container4{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(13, 13, 65);
+    position: relative;
+
+
+}
+.container4 h1{
+    position: absolute;
+    top: 15px;
+    left: 45%;
+    color: white;
+    text-decoration: underline;
+
+
+}
+
+.projectcontainer{
+   height: 500px;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   
+}
+.projects{
+    height: 400px;
+    width: 30%;
+    margin-top: 20px;
+     background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 5px aqua);
+     border: 0.5px solid aqua;
+     border-radius: 10px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
+}
+.projectimg{
+    height: 250px;
+    width: 250px;
+    margin-top: 20px;
+     background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 5px aqua);
+     border: 0.5px solid aqua;
+    
+}
+.protitle{
+    margin-top: 20px;
+
+}
+.protitle h6{
+    font-size: 15px;
+    padding:1px;
+}
+.projectbtn{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    padding: 10px;
+}
+.projectbtn button{
+    height: 30px;
+    width: 80px;
+    border: none;
+    outline: none;
+    border-radius: 13px;
+    padding: 5px;
+    color: rgb(13, 13, 65);
+     background-color: aqua;
+     cursor: pointer
+}
+
+.projectbtn button:hover{
+
+    background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 5px aqua);
+    border: 0.5px solid aqua;
+    color: white;
+}
+
+
+/*containern 555*/
+
+.container5{
+    height: 650px;
+    width: 100%;
+    background-color: rgb(13, 13, 65);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.container5 h1{
+    color: white;
+    margin-top: 5px;
+}
+.contactcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 50%;
+     background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 18px aqua);
+     border: 0.5px solid aqua;
+     border-radius: 15px;
+
+}
+.contactcontainer h3{
+    margin-top: 15px;
+}
+.Namearea{
+    height:70px;
+    width:400px;
+    margin-left: 50px;
+}
+
+.Namearea input{
+    padding: 10px;
+    margin-top: 8px;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+
+}
+
+.Namearea label{
+    color: white;
+   margin-bottom: 10px;
+   font-size: 15px;
+   text-align: start;
+   margin-left: 5px;
+
+}
+.Namearea textarea{
+    height: 180px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    resize: none;
+    margin-top: 10px;
+
+}
+
+.Namearea  button{
+    height: 40px;
+    width: 80px;
+    border: none;
+    outline: none;
+    border-radius: 13px;
+    padding: 5px;
+    color: rgb(13, 13, 65);
+     background-color: aqua;
+     cursor: pointer;
+     margin-top: 180px;
+     margin-left: 150px;
+     font-size: 15px;
+     font-family:sans-serif;
+}
+
+.Namearea button:hover{
+
+    background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 5px aqua);
+    border: 0.5px solid aqua;
+    color: white;
+}
+
+
+
+/* containner 6 satart here footer */
+.container6{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    gap: 80px;
+     background:rgba(1, 1, 34, 0.85);
+     backdrop-filter: blur(52px);
+     border-top: 2px solid aqua;
+
+}
+.aboutf{
+    height:170px ;
+    width: 35%;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+.aboutf h3 {
+    margin-left: 20px;
+    color: aqua;
+}
+.aboutf p{
+        margin-left: 20px;
+        margin-top: 10px;
+        color: rgb(154, 126, 133);
+}
+
+.skillf{
+     height:170px ;
+    width: 25%;
+    margin-top: 20px;
+
+}
+.skillf h3 {
+    margin-left: 20px;
+    color: aqua;
+    
+}
+.skillf p{
+        margin-top: 10px;
+        color: rgb(154, 126, 133);
+}
+
+
+.Contactf{
+     height:170px ;
+    width: 25%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Contactfi p{
+    margin-top: 10px;
+    color: rgb(154, 126, 133);
+
+}
+
+.contactflink{
+    height: 50px;
+    width: 230px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.Contactf h3{
+    color: aqua;
+}
+
+.contactflink i{
+    font-size: 25px;
+    height: 25px;
+    width: 25px;
+    border-radius:25%;
+    border: none;
+     color: aqua;
+    background-color: rgb(13, 13, 65);
+
+}
+
+
+.contactflink i:hover{
+    color: rgb(13, 13, 65);
+    background-color: aqua;
+     filter: drop-shadow(1px 3px 5px aqua);
+
+}
+/* 
+headerr menu btn  */
+.menubtn{
+    display: none;
+}
+
+
+@media (max-width:600px) {
+
+  *{   margin: 0;
+    padding: 0;
+}
+
+.Header{
+    width: 100%;
+    height: 125px;
+    background-color: rgb(13, 13, 65);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid aqua;
+    z-index: 2;
+}
+
+.fakeheader{
+     width: 100%;
+    height: 125px;
+    display: flex;
+    background-color: rgb(13, 13, 65);
+    margin-top: 0px;
+
+}
+
+ .formcontent{
+        z-index: 9999;
+    }
+
+.logo{
+    font-size: 50px;
+    color: white;
+    margin-left: 20px;
+    font-weight: 800;
+    padding: 20px;
+    
+}
+.listitem{
+    display:none;
+    flex-direction: row;
+    background: rgba(4, 46, 77, 0.25);
+     backdrop-filter: blur(52px);
+   position: absolute;
+   top:125px;
+   left: 25%;
+   border: 1px solid aqua;
+   border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    transition: 3s ;
+}
+
+.listitem ul{
+flex-direction: column;
+width: 600px;
+height: 600px;
+align-items:left;
+margin-top: 30px;
+margin-left: -20px;
+    
+}
+.listitem ul span button{
+    height: 60px;
+    width: 140px;
+    margin-left:20px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.List a{
+text-decoration: none;
+list-style: none;
+color: aqua;
+font-size: 38px;
+cursor: pointer;
+margin-top: 20px;
+
+}
+.List a:hover {
+     text-decoration: none;
+     list-style: none;
+     
+}
+
+.menubtn{
+    display: block;
+    padding: 20px;
+    margin-right: 20px;
+}
+.menubtn i{
+    color: white;
+    font-size: 35px;
+
+}
+#closebtn{
+    display:none;
+
+}
+
+.SignInbtn{
+    margin-right: 10px;
+}
+.SignInbtn button{
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+    font-size: 15px;
+    color: rgb(13, 13, 65);
+    background-color: aqua;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+
+}
+.SignInbtn button:hover{
+     background-color:rgb(13, 13, 65);
+    filter: drop-shadow(1px 3px 5px aqua);
+    border: 0.5px solid aqua;
+    color: white;
+}
+
+ .formcontent{
+        width: 60%;
+        height: 600px;
+        padding: 20px;
+        left:25%;
+    }
+
+.Formclosebtn{
+   margin-left:460px;
+    background-color:rgb(13, 13, 65);
+    color: aqua;
+    filter: drop-shadow(1px 3px 8px aqua); 
+   height: 40px;
+   width: 40px;
+   font-size: 25px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   transition: 0.1s;
+   margin-top: -15px;
+}
+.close:hover{
+   color:rgb(13, 13, 65);
+   background-color: aqua;
+    filter: drop-shadow(1px 3px 8px aqua);  
+}
+
+
+.formcontent h1{
+    margin-top: 0px;
+    color: aqua;
+
+
+
+}
+.label{
+
+    color: rgb(224, 230, 230);
+    font-size: 30px;
+   
+
+}
+.inputfield{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 25px;
+    font-size: 23px;
+    border: none;
+    outline: none;
+    background-color: rgb(13, 13, 65);
+    border-radius: 5px;
+    color: white;
+
+
+}
+.forgetp{
+    color: aqua;
+    font-size: 25px;
+    margin-top: 20px;
+
+}
+.forgetp a{
+    margin-left: 10px;
+    color: white;
+
+}
+.Logi-btn{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.Logi-btn button{
+
+    height: 50px;
+    width: 110px;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif sans-serif;
+    border: none;
+    border-radius: 5px;
+    color: rgb(13, 13, 65);
+    background-color: aqua;
+    cursor: pointer;
+
+}
+
+#container{
+    height: 1450px;
+    display: flex;
+    flex-direction: column;
+    width:775px;
+
+
+}
+
+.left{
+    width:100%;
+    height: 650px;
+    position: relative;
+}
+
+
+.image img{
+    width: 500px;
+    height: 500px;
+    margin-top: 50px;
+    margin-left: 170px;
+
+}
+
+.right{
+    height: 750px;
+}
+.content{
+    margin-left:50px;
+}
+.content h1{
+
+    font-size: 50px;
+}
+.content h3{
+    font-size: 30px;
+}
+.contact-icon{
+    margin-top: 60px;
+}
+.contact-icon a i{
+    font-size:45px;
+    padding: 10px;
+}
+
+.Btncontent a button {
+    height: 60px;
+    width: 160px;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.container2{
+    height: 1750px;
+    width: 775px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container2 h1{
+    margin-top: 0px;
+}
+.aboutpic img{
+    margin-left: 10px;
+    margin-top: 20px;
+    height: 600px;
+    width: 600px;
+    
+}
+.aboutmecontent{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    height: 1000px;
+    gap: 30px;
+}
+.experiance{
+    height:450px;
+    width: 450px;
+    margin-top: 0px;
+    margin-left: 25px;
+
+}
+
+.education{
+
+     height:450px;
+    width: 450px;
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.aboutpara{
+    height: 650px;
+    width: 600px;
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.aboutpara h4{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 30px;
+}
+.aboutpara p{
+    margin-top: 10px;
+    text-wrap: wrap ;
+    font-size: 20px;
+    margin-left: -20px;
+}
+
+.container3{
+    height: 1400px;
+    width: 775px;
+}
+.skillconatiner{
+    width: 640px;
+    height: 1200px;
+    margin-top: 20px;
+    margin-left: -35px;
+    
+
+}
+.skills{
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.container4{
+    height: 1920px;
+    width: 775px;
+   
+}
+.projectcontainer{
+    height: 1750px;
+    display: flex;
+    flex-direction: column;
+}
+.projects{
+    width: 550px;
+    height: 550px;
+    margin-top: 70px;
+
+}
+.projectimg{
+    height: 400px;
+    width: 400px;
+}
+.projectbtn button{
+    height: 60px;
+    width: 120px;
+    font-size: 20px;
+}
+
+.container5{
+    width: 775px;
+    height: 850px;
+}
+.contactcontainer{
+    margin-top: 25px;
+    width: 600px;
+    height: 700px;
+}
+.contactcontainer h3{
+    font-size: 30px;
+}
+.Namearea{
+    height:100px;
+}
+
+.Namearea label{
+    font-size: 28px;
+}
+.Namearea input{
+    font-size: 25px;
+    padding: 10px;
+    height: 30px;
+}
+.Namearea textarea{
+    font-size: 25px;
+
+}
+.Namearea button{
+    height: 50px;
+    width: 120px;
+    margin-left: 110px;
+    font-size: 25px;
+}
+.container6{
+    height: 500px;
+    width: 775px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.Contactf{
+    height: 150px;
+    margin-left: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.Contactfi {
+      display: flex;
+      flex-direction: column;        
+}
+/* .Contactfi p{
+    word-spacing: 0;
+  letter-spacing: normal;
+  white-space:norma ;
+} */
+
+
+.contactflink {
+    position: absolute;
+    left :200%;
+    height: 200px;
+}
+.contactflink a i{
+     font-size: 40px;
+     margin-left: 20px;
+     margin-right: 10px;
+}
+
+} 
